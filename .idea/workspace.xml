@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18587a-e0d9-48e6-b009-a153e49277df" name="Changes" comment="add implemented">
+    <list default="true" id="ef18587a-e0d9-48e6-b009-a153e49277df" name="Changes" comment="findByName implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PhoneBookTest.java" afterDir="false" />
@@ -54,7 +54,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PhoneBookTest.shouldReturnNumberIfExists">
+  <component name="RunManager" selected="JUnit.PhoneBookTest.shouldReturnAllNamesSorted">
     <configuration name="PhoneBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <extension name="coverage">
@@ -81,6 +81,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
       <option name="METHOD_NAME" value="shouldNotAddToMapIfNameExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneBookTest.shouldReturnAllNamesSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
+      <option name="METHOD_NAME" value="shouldReturnAllNamesSorted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,29 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneBookTest.shouldReturnNumberOfContacts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
-      <option name="METHOD_NAME" value="shouldReturnNumberOfContacts" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookTest.shouldReturnAllNamesSorted" />
         <item itemvalue="JUnit.PhoneBookTest.shouldReturnNumberIfExists" />
         <item itemvalue="JUnit.PhoneBookTest.shouldReturnNameIfExists" />
         <item itemvalue="JUnit.PhoneBookTest" />
         <item itemvalue="JUnit.PhoneBookTest.shouldNotAddToMapIfNameExists" />
-        <item itemvalue="JUnit.PhoneBookTest.shouldReturnNumberOfContacts" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696247876466</updated>
-      <workItem from="1696247877886" duration="2595000" />
+      <workItem from="1696247877886" duration="3412000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696248083151</created>
@@ -168,7 +168,35 @@
       <option name="project" value="LOCAL" />
       <updated>1696249883555</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Stub and tests for findByNumber.">
+      <created>1696250526673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250526673</updated>
+    </task>
+    <task id="LOCAL-00004" summary="findByNumber implemented">
+      <created>1696250560413</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250560413</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Stub and tests for findByName">
+      <created>1696250680655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250680655</updated>
+    </task>
+    <task id="LOCAL-00006" summary="findByName implemented">
+      <created>1696250809588</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250809588</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +216,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="add implemented" />
+    <MESSAGE value="Stub and tests for findByNumber." />
+    <MESSAGE value="findByNumber implemented" />
+    <MESSAGE value="Stub and tests for findByName" />
+    <MESSAGE value="findByName implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="findByName implemented" />
   </component>
 </project>

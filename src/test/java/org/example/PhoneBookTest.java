@@ -56,4 +56,15 @@ class PhoneBookTest {
         Assertions.assertEquals(number, phoneBook.findByName(name));
 
     }
+
+    @Test
+    public void shouldReturnAllNamesSorted() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Temych", "1");
+        phoneBook.add("Arslan", "2");
+        phoneBook.add("Baron", "3");
+        String names = "Arslan, Baron, Temych";
+        Assertions.assertEquals(names, phoneBook.printAllNames());
+    }
+
 }
