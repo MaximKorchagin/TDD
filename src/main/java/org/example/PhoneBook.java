@@ -5,12 +5,19 @@ import java.util.Map;
 
 public class PhoneBook {
 
-    Map<String, String> map = new HashMap<>();
+    Map<String, String> nameToNumber = new HashMap<>();
+
     public int add(String name, String number) {
-        if (!map.containsKey(name)) {
-            map.put(name, number);
+        if (!nameToNumber.containsKey(name)) {
+            nameToNumber.put(name, number);
+
         }
-        return map.size();
+        return nameToNumber.size();
+    }
+
+    public String findByNumber(String number) {
+
+        return null;
     }
 
 }

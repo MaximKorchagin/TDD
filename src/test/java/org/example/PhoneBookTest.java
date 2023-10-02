@@ -3,8 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PhoneBookTest {
 
     @Test
@@ -13,8 +11,8 @@ class PhoneBookTest {
         String name = "Temych";
         String number = "88005553599";
         phoneBook.add(name, number);
-        Assertions.assertTrue(phoneBook.map.containsKey(name));
-        Assertions.assertEquals(number, phoneBook.map.get(name));
+        Assertions.assertTrue(phoneBook.nameToNumber.containsKey(name));
+        Assertions.assertEquals(number, phoneBook.nameToNumber.get(name));
     }
 
     @Test
@@ -36,6 +34,16 @@ class PhoneBookTest {
         phoneBook.add(name, number);
         int counter = phoneBook.add(name, "3243423");
         Assertions.assertEquals(1, counter);
-        Assertions.assertEquals(number, phoneBook.map.get(name));
+        Assertions.assertEquals(number, phoneBook.nameToNumber.get(name));
+    }
+
+    @Test
+    public void shouldReturnNameIfExists() {
+        PhoneBook phoneBook = new PhoneBook();
+        String name = "Temych";
+        String number = "88005553599";
+        phoneBook.add(name, number);
+        Assertions.assertEquals(name, phoneBook.findByNumber(number));
+
     }
 }
