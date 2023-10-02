@@ -54,7 +54,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PhoneBookTest.shouldReturnNameIfExists">
+  <component name="RunManager" selected="JUnit.PhoneBookTest.shouldReturnNumberIfExists">
     <configuration name="PhoneBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <extension name="coverage">
@@ -66,22 +66,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhoneBookTest.shouldAddToMapWhenAddNewNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
-      <option name="METHOD_NAME" value="shouldAddToMapWhenAddNewNumber" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,6 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhoneBookTest.shouldReturnNumberIfExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PhoneBookTest" />
+      <option name="METHOD_NAME" value="shouldReturnNumberIfExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhoneBookTest.shouldReturnNumberOfContacts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <extension name="coverage">
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookTest.shouldReturnNumberIfExists" />
         <item itemvalue="JUnit.PhoneBookTest.shouldReturnNameIfExists" />
         <item itemvalue="JUnit.PhoneBookTest" />
         <item itemvalue="JUnit.PhoneBookTest.shouldNotAddToMapIfNameExists" />
         <item itemvalue="JUnit.PhoneBookTest.shouldReturnNumberOfContacts" />
-        <item itemvalue="JUnit.PhoneBookTest.shouldAddToMapWhenAddNewNumber" />
       </list>
     </recent_temporary>
   </component>
